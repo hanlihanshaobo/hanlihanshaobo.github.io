@@ -21,11 +21,11 @@
   </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="随风驰骋">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="随风驰骋">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="少伯">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/">
@@ -41,7 +41,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>随风驰骋</title>
   
 
 
@@ -92,7 +92,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">随风驰骋</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -145,21 +145,96 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BELNMP%E7%8E%AF%E5%A2%83/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/17/LNMP%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="少伯">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="随风驰骋">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BELNMP%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">树莓派LNMF环境-以wordpress为例</a>
+            <a href="/2020/05/17/LNMP%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">LNMP环境配置-以wordpress为例</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-17 23:29:51 / 修改时间：23:55:40" itemprop="dateCreated datePublished" datetime="2020-05-17T23:29:51+08:00">2020-05-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Liunx/" itemprop="url" rel="index"><span itemprop="name">Liunx</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Liunx/%E6%A0%91%E8%8E%93%E6%B4%BE/" itemprop="url" rel="index"><span itemprop="name">树莓派</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="下载WordPress的安装包"><a href="#下载WordPress的安装包" class="headerlink" title="下载WordPress的安装包"></a>下载<a href="https://wordpress.org" target="_blank" rel="noopener">WordPress</a>的安装包</h1><p>树莓派通过git、wgt等方法下载，或者通过本地电脑下载之后传到树莓派服务端，最后在服务器端的文件要解压出来<br><a href="https://github.com/WordPress/WordPress.git" target="_blank" rel="noopener">github项目地址</a>        <a href="https://wordpress.org/latest.zip" target="_blank" rel="noopener">官网下载地址</a>        <a href="https://cn.wordpress.org/latest-zh_CN.zip" target="_blank" rel="noopener">中文官网下载地址</a></p>
+<h1 id="配置nginx"><a href="#配置nginx" class="headerlink" title="配置nginx"></a>配置nginx</h1><h2 id="验证nginx安装是否成功"><a href="#验证nginx安装是否成功" class="headerlink" title="验证nginx安装是否成功"></a>验证nginx安装是否成功</h2><p>1.本地电脑</p>
+<p>打开浏览器，输入localhost，出现nginx的欢迎页面，说明nginx安装成功，否则重新安装。</p>
+<p>2.远程连接（例如ssh），在同一局域网下，输入树莓派的IP地址，出现nginx的欢迎页面，说明nginx安装成功，否则重新安装。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85LNMP%E7%8E%AF%E5%A2%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="少伯">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="随风驰骋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85LNMP%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">树莓派安装LNMP环境</a>
         </h2>
 
         <div class="post-meta">
@@ -176,8 +251,21 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-17 22:44:29" itemprop="dateModified" datetime="2020-05-17T22:44:29+08:00">2020-05-17</time>
+                <time title="修改时间：2020-05-17 23:35:37" itemprop="dateModified" datetime="2020-05-17T23:35:37+08:00">2020-05-17</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/%E6%A0%91%E8%8E%93%E6%B4%BE/" itemprop="url" rel="index"><span itemprop="name">树莓派</span></a>
+                </span>
+            </span>
 
           
 
@@ -190,9 +278,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h1><h2 id="秦腔"><a href="#秦腔" class="headerlink" title="秦腔"></a>秦腔</h2><p>(Qinqiang Opera)，别称“梆子腔”，中国汉族最古老的戏剧之一，起于西周，源于西府(核心地区是陕西省宝鸡市的岐山(西岐)与凤翔(雍城))。成熟于秦。国家级非物质文化遗产之一。</p>
-<h1 id="表现手法"><a href="#表现手法" class="headerlink" title="表现手法"></a>表现手法</h1><p>古时陕西、甘肃一带属秦国，所以称之为“秦腔”。因为早期秦腔演出时，常用枣木梆子敲击伴奏，故又名“梆子腔”。秦腔成形后，流传全国各地，因其整套成熟、完整的表演体系，对各地的剧种产生了不同程度的 影响，并直接影响了梆子腔成为梆子腔剧种的始祖。秦腔的表演技艺朴实、粗犷、豪放，富有夸张性，生活气息浓厚，技巧丰富。</p>
-<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p>2006年5月20日，经国务院批准列入第一批国家级非物质文化遗产名录。非遗编号Ⅳ-16。 </p>
+          <h1 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h1><p><code>sudo apt -y install nginx</code></p>
+<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><p><code>sudo apt -y install mariadb-server</code></p>
+<h1 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h1><p><code>sudo apt install -y php-fpm php-mysql</code></p>
 
       
     </div>
@@ -216,12 +304,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="少伯">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="随风驰骋">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -243,8 +331,21 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-17 22:55:20" itemprop="dateModified" datetime="2020-05-17T22:55:20+08:00">2020-05-17</time>
+                <time title="修改时间：2020-05-17 23:35:46" itemprop="dateModified" datetime="2020-05-17T23:35:46+08:00">2020-05-17</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/%E6%A0%91%E8%8E%93%E6%B4%BE/" itemprop="url" rel="index"><span itemprop="name">树莓派</span></a>
+                </span>
+            </span>
 
           
 
@@ -291,12 +392,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="少伯">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="随风驰骋">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -407,7 +508,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
+  <p class="site-author-name" itemprop="name">少伯</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -415,9 +516,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">5</span>
@@ -451,7 +556,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">少伯</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
