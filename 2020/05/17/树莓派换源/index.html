@@ -20,28 +20,33 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="备份原始文件，防止修改后出错备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件cp &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;etc&#x2F;apt&#x2F;sources.list.dcp &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;raspi.list &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;raspi.list.d 打开并修改系统数据源文件sources">
+<meta property="og:type" content="article">
+<meta property="og:title" content="树莓派换源">
+<meta property="og:url" content="http://yoursite.com/2020/05/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="备份原始文件，防止修改后出错备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件cp &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;etc&#x2F;apt&#x2F;sources.list.dcp &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;raspi.list &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;raspi.list.d 打开并修改系统数据源文件sources">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-17T14:07:14.000Z">
+<meta property="article:modified_time" content="2020-05-17T14:29:43.785Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="树莓派">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/05/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>树莓派换源 | Hexo</title>
   
 
 
@@ -139,9 +144,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +163,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8D%A2%E6%BA%90/" class="post-title-link" itemprop="url">树莓派换源</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          树莓派换源
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,160 +189,39 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="备份原始文件，防止修改后出错"><a href="#备份原始文件，防止修改后出错" class="headerlink" title="备份原始文件，防止修改后出错"></a>备份原始文件，防止修改后出错</h1><h3 id="备份为相同文件下相同文件名的-d文件，出错之后可直接删除文件扩展名-d后直接恢复为原文件"><a href="#备份为相同文件下相同文件名的-d文件，出错之后可直接删除文件扩展名-d后直接恢复为原文件" class="headerlink" title="备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件"></a>备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件</h3><p><code>cp /etc/apt/sources.list /etc/apt/sources.list.d</code><br><code>cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.d</code></p>
+        <h1 id="备份原始文件，防止修改后出错"><a href="#备份原始文件，防止修改后出错" class="headerlink" title="备份原始文件，防止修改后出错"></a>备份原始文件，防止修改后出错</h1><h3 id="备份为相同文件下相同文件名的-d文件，出错之后可直接删除文件扩展名-d后直接恢复为原文件"><a href="#备份为相同文件下相同文件名的-d文件，出错之后可直接删除文件扩展名-d后直接恢复为原文件" class="headerlink" title="备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件"></a>备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件</h3><p><code>cp /etc/apt/sources.list /etc/apt/sources.list.d</code><br><code>cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.d</code></p>
 <h1 id="打开并修改系统数据源文件sources-list"><a href="#打开并修改系统数据源文件sources-list" class="headerlink" title="打开并修改系统数据源文件sources.list"></a>打开并修改系统数据源文件sources.list</h1><h3 id="用nano文本编辑器打开sources-list文件"><a href="#用nano文本编辑器打开sources-list文件" class="headerlink" title="用nano文本编辑器打开sources.list文件"></a>用nano文本编辑器打开sources.list文件</h3><p><code>sudo nano /etc/apt/sources.list</code></p>
 <h3 id="更新后的sources-list如下："><a href="#更新后的sources-list如下：" class="headerlink" title="更新后的sources.list如下："></a>更新后的sources.list如下：</h3><p><code>#deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi</code><br><code># Uncomment line below then &#39;apt-get update&#39; to enable &#39;apt-get source&#39;</code><br><code>#deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi</code><br><code>deb https://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi</code></p>
 <h3 id="nano文本编辑器的保存请按照以下顺序：-先按ctrl-X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存-成功"><a href="#nano文本编辑器的保存请按照以下顺序：-先按ctrl-X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存-成功" class="headerlink" title="nano文本编辑器的保存请按照以下顺序： 先按ctrl + X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存 成功"></a>nano文本编辑器的保存请按照以下顺序： 先按ctrl + X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存 成功</h3><h1 id="打开并修改树莓派基金会数据源文件raspi-list"><a href="#打开并修改树莓派基金会数据源文件raspi-list" class="headerlink" title="打开并修改树莓派基金会数据源文件raspi.list"></a>打开并修改树莓派基金会数据源文件raspi.list</h1><h3 id="用nano文本编辑器打开raspi-list文件输入"><a href="#用nano文本编辑器打开raspi-list文件输入" class="headerlink" title="用nano文本编辑器打开raspi.list文件输入"></a>用nano文本编辑器打开raspi.list文件输入</h3><p><code>sudo nano /etc/apt/sources.list.d/raspi.list</code></p>
 <h3 id="更新后的raspi-list如下："><a href="#更新后的raspi-list如下：" class="headerlink" title="更新后的raspi.list如下："></a>更新后的raspi.list如下：</h3><p><code>#deb http://archive.raspberrypi.org/debian/ stretch main ui</code><br><code># Uncomment line below then &#39;apt-get update&#39; to enable &#39;apt-get source</code><br><code>#deb-src http://archive.raspberrypi.org/debian/ stretch main ui</code><br><code>deb https://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui</code> </p>
 <h3 id="nano文本编辑器的保存请按照以下顺序：-先按ctrl-X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存-成功-1"><a href="#nano文本编辑器的保存请按照以下顺序：-先按ctrl-X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存-成功-1" class="headerlink" title="nano文本编辑器的保存请按照以下顺序： 先按ctrl + X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存 成功"></a>nano文本编辑器的保存请按照以下顺序： 先按ctrl + X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存 成功</h3>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" rel="tag"># 树莓派</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BELNMP%E7%8E%AF%E5%A2%83/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BELNMP%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">树莓派LNMF环境-以wordpress为例</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-14 02:13:03" itemprop="dateCreated datePublished" datetime="2020-05-14T02:13:03+08:00">2020-05-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-17 22:03:42" itemprop="dateModified" datetime="2020-05-17T22:03:42+08:00">2020-05-17</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h1><p>秦腔(Qinqiang Opera)，别称“梆子腔”，中国汉族最古老的戏剧之一，起于西周，源于西府(核心地区是陕西省宝鸡市的岐山(西岐)与凤翔(雍城))。成熟于秦。国家级非物质文化遗产之一。</p>
-<h1 id="表现手法"><a href="#表现手法" class="headerlink" title="表现手法"></a>表现手法</h1><p>古时陕西、甘肃一带属秦国，所以称之为“秦腔”。因为早期秦腔演出时，常用枣木梆子敲击伴奏，故又名“梆子腔”。秦腔成形后，流传全国各地，因其整套成熟、完整的表演体系，对各地的剧种产生了不同程度的 影响，并直接影响了梆子腔成为梆子腔剧种的始祖。秦腔的表演技艺朴实、粗犷、豪放，富有夸张性，生活气息浓厚，技巧丰富。</p>
-<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p>2006年5月20日，经国务院批准列入第一批国家级非物质文化遗产名录。非遗编号Ⅳ-16。 </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/14/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/14/test/" class="post-title-link" itemprop="url">不知道写点什么，就抄写几首诗吧</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-14 01:09:24 / 修改时间：02:03:01" itemprop="dateCreated datePublished" datetime="2020-05-14T01:09:24+08:00">2020-05-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>满江红<br>岳飞<br>怒发冲冠，凭阑处、潇潇雨歇。抬望眼、仰天长啸，壮怀激烈。三十功名尘与土，八千里路云和月。莫等闲、白了少年头，空悲切。 靖康耻，犹未雪；臣子恨，何时灭。驾长车踏破、贺兰山缺。壮志饥餐胡虏肉，笑谈渴饮匈奴血。待从头、收拾旧山河。朝天阙。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/14/test/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/14/%E6%A0%91%E8%8E%93%E6%B4%BELNMP%E7%8E%AF%E5%A2%83/" rel="prev" title="树莓派LNMF环境-以wordpress为例">
+      <i class="fa fa-chevron-left"></i> 树莓派LNMF环境-以wordpress为例
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -390,6 +274,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#备份原始文件，防止修改后出错"><span class="nav-number">1.</span> <span class="nav-text">备份原始文件，防止修改后出错</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#备份为相同文件下相同文件名的-d文件，出错之后可直接删除文件扩展名-d后直接恢复为原文件"><span class="nav-number">1.0.1.</span> <span class="nav-text">备份为相同文件下相同文件名的.d文件，出错之后可直接删除文件扩展名.d后直接恢复为原文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打开并修改系统数据源文件sources-list"><span class="nav-number">2.</span> <span class="nav-text">打开并修改系统数据源文件sources.list</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用nano文本编辑器打开sources-list文件"><span class="nav-number">2.0.1.</span> <span class="nav-text">用nano文本编辑器打开sources.list文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新后的sources-list如下："><span class="nav-number">2.0.2.</span> <span class="nav-text">更新后的sources.list如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nano文本编辑器的保存请按照以下顺序：-先按ctrl-X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存-成功"><span class="nav-number">2.0.3.</span> <span class="nav-text">nano文本编辑器的保存请按照以下顺序： 先按ctrl + X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存 成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打开并修改树莓派基金会数据源文件raspi-list"><span class="nav-number">3.</span> <span class="nav-text">打开并修改树莓派基金会数据源文件raspi.list</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用nano文本编辑器打开raspi-list文件输入"><span class="nav-number">3.0.1.</span> <span class="nav-text">用nano文本编辑器打开raspi.list文件输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新后的raspi-list如下："><span class="nav-number">3.0.2.</span> <span class="nav-text">更新后的raspi.list如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nano文本编辑器的保存请按照以下顺序：-先按ctrl-X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存-成功-1"><span class="nav-number">3.0.3.</span> <span class="nav-text">nano文本编辑器的保存请按照以下顺序： 先按ctrl + X，然后提示是否保存按Y，然后提示保存文件名按回车（enter），保存 成功</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
